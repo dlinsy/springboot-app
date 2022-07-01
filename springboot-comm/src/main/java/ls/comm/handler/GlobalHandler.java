@@ -16,10 +16,6 @@ import javax.servlet.http.HttpServletResponse;
 @RestControllerAdvice
 public class GlobalHandler {
 
-    public GlobalHandler() {
-        System.out.println("GlobalHandlerGlobalHandlerGlobalHandlerGlobalHandlerGlobalHandler");
-    }
-
     /**
      * 业务异常处理
      *
@@ -35,7 +31,9 @@ public class GlobalHandler {
         rsp.setCode(e.getCode());
         rsp.setMessage(e.getMessage());
         return rsp;
-    }    /**
+    }
+
+    /**
      * 业务异常处理
      *
      * @param e 业务异常
